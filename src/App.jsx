@@ -34,7 +34,6 @@ export const App = () => {
 
   function onRemoveNote(id) {
     const newNotes = notes.filter((note) => note.id != id);
-    console.log(newNotes);
     setNotes([...newNotes]);
     localStorage.setItem("notes", JSON.stringify(newNotes));
   }
